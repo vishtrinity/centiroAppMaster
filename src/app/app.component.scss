@@ -1,0 +1,266 @@
+@import "../variables";
+@import "../font-awesome-4.7.0/scss/variables";
+@import "../mixins";
+
+// less than 576px
+@include xsm {
+    .container-fluid {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y:hidden;
+    }
+
+    .logo {
+        position: absolute;
+        top: 0;
+
+        z-index: 10;
+        font-size: $LogoFontSize;
+        padding: 2px 0 0 50px;
+        color: white;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        top: -30px;
+        right: 20px;
+    }
+
+    #carouselExampleIndicators {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    body {
+        background-color: lightslategray;
+    }
+
+    footer {
+        display: block;
+        bottom: 0;
+        background-color: black;
+    }
+   
+
+    .carousel-indicators li {
+        border-radius: 50%;
+        width: 5px;
+        height: 5px;
+
+        background-color: white !important;
+    }
+
+    .carousel-indicators .active {
+        border-radius: 50%;
+        width: 5px;
+        height: 5px;
+    }
+    .carousel-caption {
+        display: none;
+    }
+
+    .carousel-control-next-icon {
+        background-image: url("../assets/next.png");
+    }
+    .carousel-control-prev-icon {
+        background-image: url("../assets/prev.png");
+    }
+}
+
+// 576 window width and more
+@include sm {
+    .logo {
+        position: absolute;
+        top: 0;
+
+        z-index: 10;
+        font-size: $LogoFontSize;
+        padding: 2px 0 0 50px;
+        color: white;
+    }
+
+    .container-fluid {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y:hidden;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        top: -30px;
+        right: 20px;
+    }
+
+    .carousel-indicators li {
+        border-radius: 50%;
+        border-radius: 50%;
+        width: 5px;
+        height: 5px;
+    }
+
+    .carousel-indicators .active {
+        background-color: white !important;
+    }
+    .carousel-caption {
+        display: none;
+    }
+
+    .carousel-control-next-icon {
+        background-image: url("../assets/next.png");
+    }
+    .carousel-control-prev-icon {
+        background-image: url("../assets/prev.png");
+    }
+    .carousel-inner {
+        position: relative;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        justify-self: center;
+        width: 100%;
+        font-size:12px;
+       
+        
+        .card-deck {
+            display: flex;
+            flex-direction: column;
+            background-color: $upperFooterBackColor;
+
+            .card {
+                background-color: $upperFooterBackColor;
+                color: $footerFontColor;
+                .card-footer {
+                    border: none;
+                    background-color: transparent;
+                }
+            }
+        }
+
+        .card-footer {
+            color: $footerFontColor;
+            background-color: $lowerFooterBackColor;
+            .text-muted {
+                color: $tabsColor !important;
+            }
+        }
+    }
+}
+
+// 768px window width and more
+@include md {
+    .logo {
+        position: absolute;
+        top: 0;
+        z-index: 10;
+        font-size: $LogoFontSize;
+        padding: 2px 0 0 50px;
+        color: white;
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        z-index: 8;
+        right: 0;
+
+        .nav-item {
+            a {
+                color: white;
+            }
+
+            a:active,
+            .active {
+                padding-bottom: 3px;
+                color: $hyperLinksColor;
+                border-bottom: 3px solid $hyperLinksColor;
+            }
+        }
+
+        .dropdown-toggle::after {
+            border-top: none;
+        }
+
+        .dropdown-menu {
+            background-color: $bodyTextColor;
+            opacity: 40%;
+            z-index: 10;
+            .dropdown-item {
+                color: white;
+                border-bottom: 1px solid $footerFontColor;
+            }
+        }
+    }
+
+    .carousel-indicators li {
+        border-radius: 50%;
+
+        width: 12px;
+        height: 12px;
+
+        background-color: white !important;
+    }
+
+    .carousel-indicators .active {
+        background-color: white !important;
+    }
+
+    .carousel-caption {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        position: absolute;
+        top: 30%;
+        div {
+            font-size: $carouselTitleFontSize * 0.8;
+        }
+        p {
+            font-size: $carouselBodyFontSize * 0.8;
+        }
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+// 992px window width and more
+@include lg {
+    .carousel-caption {
+        display: flex;
+        flex-direction: column;
+
+        top: 35%;
+        div {
+            font-size: $carouselTitleFontSize;
+        }
+        p {
+            font-size: $carouselBodyFontSize;
+        }
+    }
+
+    .card-deck {
+        display: flex;
+        flex-direction: row !important;
+
+        .card {
+            border: 0;
+        }
+        .card-footer {
+            border: none;
+            background-color: transparent;
+        }
+    }
+}

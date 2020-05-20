@@ -1,0 +1,90 @@
+@media (max-width: 575px) {
+  .custom-header {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+  }
+  .custom-header .custom-title {
+    font-size: 25px !important;
+    font-weight: bolder;
+    color: #065575;
+  }
+  .custom-header .custom-title .custom-subtitle {
+    font-size: 18px;
+  }
+  .custom-header .custom-card-title {
+    font-size: 18px !important;
+    font-weight: bolder !important;
+    color: #065575;
+  }
+}
+
+@media (min-width: 576px) {
+  .card {
+    width: 90%;
+    height: 100%;
+    margin: 20px 20px;
+    padding: 0 100px;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border: none;
+  }
+  .image-container {
+    background-image: url("../../assets/WORLDMAPDOTCS.svg");
+    background-color: rgba(245, 245, 245, 0.692);
+    border: none;
+    background-blend-mode: screen;
+    background-repeat: repeat-y;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+  .card-container .custom-header {
+    border: none;
+    text-align: center;
+  }
+  .card-container .custom-header .custom-title {
+    font-size: 25px !important;
+    font-weight: bolder;
+    color: #065575;
+  }
+  .card-container .custom-header .custom-title .custom-subtitle {
+    font-size: 18px;
+  }
+  .card-container .custom-card-title {
+    font-size: 18px !important;
+    font-weight: bolder;
+    color: #065575;
+  }
+  .card-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .custom-section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 10px 0 0 110px;
+  }
+  .card-text {
+    font-size: 1.1rem;
+  }
+  .light-dark {
+    background-color: rgba(240, 238, 238, 0.623) !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .grid-section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 2fr;
+        grid-template-columns: 2fr 2fr;
+    gap: 5% 8%;
+  }
+}
+/*# sourceMappingURL=home.component.css.map */

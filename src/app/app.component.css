@@ -1,0 +1,243 @@
+@media (max-width: 575px) {
+  .container-fluid {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .logo {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    font-size: 32px;
+    padding: 2px 0 0 50px;
+    color: white;
+  }
+  .navbar-toggler {
+    position: absolute;
+    top: -30px;
+    right: 20px;
+  }
+  #carouselExampleIndicators {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  body {
+    background-color: lightslategray;
+  }
+  footer {
+    display: block;
+    bottom: 0;
+    background-color: black;
+  }
+  .carousel-indicators li {
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: white !important;
+  }
+  .carousel-indicators .active {
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+  }
+  .carousel-caption {
+    display: none;
+  }
+  .carousel-control-next-icon {
+    background-image: url("../assets/next.png");
+  }
+  .carousel-control-prev-icon {
+    background-image: url("../assets/prev.png");
+  }
+}
+
+@media (min-width: 576px) {
+  .logo {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    font-size: 32px;
+    padding: 2px 0 0 50px;
+    color: white;
+  }
+  .container-fluid {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .navbar-toggler {
+    position: absolute;
+    top: -30px;
+    right: 20px;
+  }
+  .carousel-indicators li {
+    border-radius: 50%;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+  }
+  .carousel-indicators .active {
+    background-color: white !important;
+  }
+  .carousel-caption {
+    display: none;
+  }
+  .carousel-control-next-icon {
+    background-image: url("../assets/next.png");
+  }
+  .carousel-control-prev-icon {
+    background-image: url("../assets/prev.png");
+  }
+  .carousel-inner {
+    position: relative;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    width: 100%;
+    font-size: 12px;
+  }
+  footer .card-deck {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #223a44;
+  }
+  footer .card-deck .card {
+    background-color: #223a44;
+    color: #e6e1d7;
+  }
+  footer .card-deck .card .card-footer {
+    border: none;
+    background-color: transparent;
+  }
+  footer .card-footer {
+    color: #e6e1d7;
+    background-color: #152228;
+  }
+  footer .card-footer .text-muted {
+    color: #2a9ac7 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    font-size: 32px;
+    padding: 2px 0 0 50px;
+    color: white;
+  }
+  nav {
+    position: absolute;
+    top: 0;
+    z-index: 8;
+    right: 0;
+  }
+  nav .nav-item a {
+    color: white;
+  }
+  nav .nav-item a:active,
+  nav .nav-item .active {
+    padding-bottom: 3px;
+    color: #0991c8;
+    border-bottom: 3px solid #0991c8;
+  }
+  nav .dropdown-toggle::after {
+    border-top: none;
+  }
+  nav .dropdown-menu {
+    background-color: #000000;
+    opacity: 40%;
+    z-index: 10;
+  }
+  nav .dropdown-menu .dropdown-item {
+    color: white;
+    border-bottom: 1px solid #e6e1d7;
+  }
+  .carousel-indicators li {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: white !important;
+  }
+  .carousel-indicators .active {
+    background-color: white !important;
+  }
+  .carousel-caption {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    position: absolute;
+    top: 30%;
+  }
+  .carousel-caption div {
+    font-size: 38.4px;
+  }
+  .carousel-caption p {
+    font-size: 20px;
+  }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-caption {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 35%;
+  }
+  .carousel-caption div {
+    font-size: 48px;
+  }
+  .carousel-caption p {
+    font-size: 25px;
+  }
+  .card-deck {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .card-deck .card {
+    border: 0;
+  }
+  .card-deck .card-footer {
+    border: none;
+    background-color: transparent;
+  }
+}
+/*# sourceMappingURL=app.component.css.map */
